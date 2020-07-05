@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "id": "267285496",
+      "name": "timer-app",
+      "imagePath": "project_on_computer.png",
+      "title": "Timer App",
+      "projectLink": "https://devaidar.github.io/timer-app/",
+      "createdAt": "2020-05-27T10:09:10Z",
+      "url": "https://github.com/DevAidar/timer-app",
+      "description": "Timer app allows the user to create / store / edit timers on the page.",
+      "details": [
+        "⚡ Ability to sign up, and log in",
+        "⚡ Inovative input boxes for timers",
+        "⚡ Timers are saved for the specific user and can be deleted"
+      ],
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "277386073",
+      "name": "weather-app",
+      "imagePath": "project_on_iphone.png",
+      "title": "Weather App",
+      "projectLink": "https://devaidar.github.io/weather-app/",
+      "createdAt": "2020-07-05T21:26:50Z",
+      "url": "https://github.com/DevAidar/weather-app",
+      "description": "Weather app that initializes public API data to show weather for cities.",
+      "details": [
+        "⚡ Working with public API.",
+        "⚡ Optimized to work on both computers, and phones.",
+        "⚡ Created by using store with reducers to store the data."
+      ],
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "277386102",
+      "name": "hackernews-app",
+      "title": "Hacker News App",
+      "projectLink": "https://devaidar.github.io/hackernews-app/",
+      "createdAt": "2020-07-05T21:27:04Z",
+      "url": "https://github.com/DevAidar/hackernews-app",
+      "description": "Hacker News App utilizes public api to show top / recent hacker news from the web, with all the comments attached to them.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "271126948",
+      "name": "dog-api",
+      "title": "Dog Api App",
+      "projectLink": "https://devaidar.github.io/dog-api/",
+      "createdAt": "2020-06-09T22:58:11Z",
+      "url": "https://github.com/DevAidar/dog-api",
+      "description": "The complete portfolio website hosted using github pages (gh-pages). Visit the website here : ",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    }
+  ]
+}
