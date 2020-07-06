@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectLanguages from '../../components/projectLanguages/ProjectLanguages';
 import "./GithubRepoCard.css";
 import { socialMediaLinks } from "../../portfolio";
 
-export default function GithubRepoCard({ repo }) {
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win && win.focus();
+const GithubRepoCard = ({ repo }) => {
+  let toGithub = false;
+
+  const openRepoinNewTab = (url, special = false) => {
+    console.log(special, url, toGithub);
+    if (special || !toGithub) {
+      console.log(url)
+      var win = window.open(url, "_blank");
+      win && win.focus();
+    }
+    toGithub = special;
   }
 
   return (
@@ -40,7 +47,7 @@ export default function GithubRepoCard({ repo }) {
           className="icon-button repo-icon-button github"
           rel="noopener noreferrer"
           style={{ display: 'flex', textAlign: 'right', height: '100%', justifySelf: 'flex-end', alignSelf: 'center', alignContent: 'center' }}
-          onClick={() => openRepoinNewTab(repo.url)}
+          onClick={() => openRepoinNewTab(repo.url, true)}
         >
           <i className="fab fa-github" style={{ alignSelf: 'center', justifySelf: 'center', margin: 'auto .5em auto 0', textSize: '1rem !important' }} />
         </span>
@@ -55,3 +62,5 @@ export default function GithubRepoCard({ repo }) {
     </div >
   );
 }
+
+export default GithubRepoCard;
