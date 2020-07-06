@@ -8,7 +8,7 @@ function Header() {
     <Fade top duration={1000 / 4} distance="20px">
       <div>
         <header className="header">
-          <NavLink to="/portfolio" tag={Link} className="logo">
+          <NavLink to="/portfolio/" tag={Link} className="logo">
             <span className="grey-color"> &lt;</span>
             <span className="logo-name">Aydar Nuriev</span>
             <span className="grey-color">/&gt;</span>
@@ -20,7 +20,7 @@ function Header() {
           <ul className="menu">
             <li>
               <NavLink
-                exact to="/portfolio"
+                exact to="/portfolio/"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
               >
@@ -29,7 +29,7 @@ function Header() {
             </li>
             <li>
               <NavLink
-                to="/portfolio/education"
+                to="/portfolio/education/"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
               >
@@ -38,7 +38,7 @@ function Header() {
             </li>
             <li>
               <NavLink
-                to="/portfolio/experience"
+                to="/portfolio/experience/"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
               >
@@ -47,7 +47,7 @@ function Header() {
             </li>
             <li>
               <NavLink
-                to="/portfolio/projects"
+                to="/portfolio/projects/"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
               >
@@ -56,7 +56,7 @@ function Header() {
             </li>
             <li>
               <NavLink
-                to="/portfolio/contact"
+                to="/portfolio/contact/"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
               >
