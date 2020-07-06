@@ -16,9 +16,8 @@ export default function GithubRepoCard({ repo }) {
     >
       <div
         style={{ display: 'flex', alignContent: 'center', justifyContent: 'space-between' }}
-        onClick={() => openRepoinNewTab(repo.url)}
       >
-        <p
+        <div
           className="repo-name-div"
         // style={{ display: 'flex', alignContent: 'baseline' }}
         >
@@ -36,19 +35,22 @@ export default function GithubRepoCard({ repo }) {
             />
           </svg>
           <span className="repo-name" >{repo.name}</span>
-        </p>
+        </div>
         <span
           className="icon-button repo-icon-button github"
           rel="noopener noreferrer"
           style={{ display: 'flex', textAlign: 'right', height: '100%', justifySelf: 'flex-end', alignSelf: 'center', alignContent: 'center' }}
+          onClick={() => openRepoinNewTab(repo.url)}
         >
-          <i className="fab fa-github" style={{ alignSelf: 'center', justifySelf: 'center', margin: '5px 0 0 0', textSize: '1rem !important' }} />
+          <i className="fab fa-github" style={{ alignSelf: 'center', justifySelf: 'center', margin: 'auto .5em auto 0', textSize: '1rem !important' }} />
         </span>
       </div>
-      <p className="repo-description">{repo.description}</p>
-      <div className="repo-details">
-        <p className="repo-creation-date subTitle">Created on {repo.createdAt.split('T')[0]}</p>
-        <ProjectLanguages className="repo-languages" logos={repo.languages} repo={repo} />
+      <div>
+        <p className="repo-description">{repo.description}</p>
+        <div className="repo-details">
+          <p className="repo-creation-date subTitle">Created on {repo.createdAt.split('T')[0]}</p>
+          <ProjectLanguages className="repo-languages" logos={repo.languages} repo={repo} />
+        </div>
       </div>
     </div >
   );

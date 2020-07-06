@@ -39,12 +39,12 @@
 }
 
 .repo-name-div {
-  display: block;
-  text-align: left;
+  display: flex;
+  align-content: center;
 }
 
 .repo-svg {
-  margin-right: 0.5rem;
+  margin: auto 0.5rem auto 0;
   min-width: 16px;
 }
 
@@ -58,7 +58,8 @@
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
-  margin: 0px;
+  margin: auto 0;
+  /* line-height: normal; */
 }
 
 .repo-star-svg {
@@ -78,8 +79,7 @@
   padding-left: 0;
   list-style: none;
   font-size: 2rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: auto 0 auto 0;
   text-align: right;
 }
 
