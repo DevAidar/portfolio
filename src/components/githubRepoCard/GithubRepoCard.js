@@ -7,7 +7,6 @@ const GithubRepoCard = ({ repo }) => {
   let toGithub = false;
 
   const openRepoinNewTab = (url, special = false) => {
-    console.log(special, url, toGithub);
     if (special || !toGithub) {
       console.log(url)
       var win = window.open(url, "_blank");
