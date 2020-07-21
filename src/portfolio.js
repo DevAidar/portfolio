@@ -16,7 +16,7 @@ const greeting = {
 	subTitle:
 		"A passionate Front End Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs. Always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
 	resumeLink:
-		"https://docs.google.com/document/d/1aXdMxAf_4hhFn47xqPIt9NvY83XHQIOI595a31P1YEw/edit?usp=sharing"
+		"https://docs.google.com/document/d/1U2KvoICshd7_CAwWsUjeRZ8_yr9IkAM6qVSK6JZoSY8/edit?usp=sharing"
 };
 
 const socialMediaLinks = {
