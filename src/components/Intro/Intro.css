@@ -1,0 +1,14 @@
+.social-media {
+	margin: 1em 0;
+}
+
+.social-media-icon {
+	fill: #4a6f8a;
+	margin-right: 1em;
+	transition: transform 0.2s ease-in-out;
+}
+
+.social-media-icon:hover {
+	fill: #44ce6f;
+	transform: scale(1.1);
+}

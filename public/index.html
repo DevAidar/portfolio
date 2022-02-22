@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="theme-color" content="#44ce6f" />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7">
-  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7">
-  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7" color="#885bd5">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7">
-  <meta name="msapplication-TileColor" content="#603cba">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7"
+		/>
+		<link
+			rel="mask-icon"
+			href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7"
+			color="#44ce6f"
+		/>
+		<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#6c63ff" />
-  <meta name="Aydar Nuriev Portfolio" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7">
-  <meta property="og:title" content="Aydar Nuriev Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://developerfolio.js.org/" />
-  <meta property="og:image" content="https://developerfolio.js.org/static/media/developerActivity.59389695.svg" />
-  <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
-  <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+		<meta
+			name="DevAidar | Portfolio"
+			content="Highly skilled and talented professional with ability to design and develop web applications and collaborate with team members to identify and mitigate risks; complemented by multiple academic / freelance projects and full stack web development bootcamp. Capable of redesigning network procedures, while ensuring compliance with latest upgrades and procedures. Talent for enabling cloud computing and deploying models to prevent associated security and legal issues. Passionate individual; looking to continue upgrade skillset through continuous learning programs and certifications."
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7"
+		/>
+		<link
+			rel="preload"
+			href="/static/media/Montserrat-Regular.ee653992.ttf"
+			as="font"
+			type="font/woff"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/static/media/Agustina.21f233e1.woff"
+			as="font"
+			type="font/woff"
+			crossorigin
+		/>
 
-    gtag('config', 'UA-135618960-2');
-  </script>
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.min.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/meanmenu.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/boxicons.min.css" />
+		<link
+			rel="stylesheet"
+			href="%PUBLIC_URL%/assets/css/magnific-popup.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="%PUBLIC_URL%/assets/css/owl.carousel.min.css"
+		/>
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/flaticon.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/odometer.min.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/slick.min.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css" />
+		<link rel="stylesheet" href="%PUBLIC_URL%/assets/css/responsive.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+		<title>DevAidar | Portfolio</title>
+	</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>Aydar's Portfolio</title>
-</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+		<div id="root"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
-
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/meanmenu.min.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<script src="assets/js/appear.min.js"></script>
+		<script src="assets/js/odometer.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/feather.min.js"></script>
+		<script src="assets/js/form-validator.min.js"></script>
+		<script src="assets/js/contact-form-script.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>

@@ -1,234 +1,89 @@
-/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Portfolio */
 
-const theme = {
-  primaryTheme: "#6C63FF",
-  secondaryTheme: "#55198b",
-  easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-};
-
-const greeting = {
-	/* Your Summary And Greeting Section */
-	//title: "Hi all 👋 I'm Saad",
-	title: "Aydar Nuriev",
-	nickname: "",
-	// subTitle:
-	//   "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks",
+const intro = {
+	/* About me text */
+	title: 'Hi, my name is',
+	nickname: 'Aidar Nuriev',
 	subTitle:
-		"A passionate Front End Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs. Always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-	resumeLink:
-		"https://drive.google.com/file/d/1VN5r0eYMKlFe7nQMW8EFslAwtigRSoDt/view?usp=sharing"
+		'Tech-savvy professional with ability to design and develop web applications and collaborate with team members to identify and mitigate risks.',
 };
 
 const socialMediaLinks = {
 	/* Your Social Media Link */
-	github: "https://github.com/devaidar",
-	linkedin: "https://www.linkedin.com/in/aydar-nuriev-996a661b1/",
-	gmail: "aidar.nuriev26@gmail.com",
-	facebook: "https://www.facebook.com/aidar.nuriev.3",
-	instagram: "https://www.instagram.com/aidar_lime/"
+	github: 'https://github.com/devaidar',
+	linkedin: 'https://www.linkedin.com/in/devaidar',
+	email: 'contact@devaidar.com',
 };
 
-const skills = {
-  data: [
-    {
-      title: "Front End Development",
-      imagePath: "fullstack.svg",
-      skills: [
-        "⚡ Building resposive website front end using React-Redux",
-        "⚡ Experience in React JS components, Forms, Events, Keys, Router, plus Redux, Animations",
-        "⚡ Expertise in processing Api's .json files to display on the page"
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26"
-          }
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6"
-          }
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E"
-          }
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB"
-          }
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933"
-          }
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837"
-          }
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB"
-          }
-        },
-      ]
-    },
-    {
-      title: "UI/UX Design",
-      imagePath: "ui_ux_design.svg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience"
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2"
-          }
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E"
-          }
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00"
-          }
-        },
-      ]
-    }
-  ]
+const aboutMe = {
+	description: 'Highly skilled and talented professional with ability to design and develop web applications and collaborate with team members to identify and mitigate risks; complemented by multiple academic / freelance projects and full stack web development bootcamp. Capable of redesigning network procedures, while ensuring compliance with latest upgrades and procedures. Talent for enabling cloud computing and deploying models to prevent associated security and legal issues. Passionate individual; looking to continue upgrade skillset through continuous learning programs and certifications.',
+	skills: [
+		{ text: 'MongoDB', icon: 'M22 8v4h-20v-4h20zm2-2h-24v8h24v-8zm-21 5l.863-2h1.275l-.863 2h-1.275zm2.066 0l.864-2h1.275l-.863 2h-1.276zm2.067 0l.863-2h1.275l-.864 2h-1.274zm2.066 0l.863-2h1.274l-.863 2h-1.274zm3.341 0h-1.274l.863-2h1.275l-.864 2zm7.46 0c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm2 7v4h-20v-4h20zm2-2h-24v8h24v-8zm-21 5l.863-2h1.275l-.863 2h-1.275zm2.066 0l.863-2h1.275l-.863 2h-1.275zm2.067 0l.863-2h1.275l-.864 2h-1.274zm2.066 0l.863-2h1.274l-.863 2h-1.274zm3.341 0h-1.274l.863-2h1.275l-.864 2zm7.46 0c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm-15.597-16h-2.403l4-5h12l4 5h-2.403l-2.667-3h-9.86l-2.667 3z' },
+		{ text: 'React JS', icon: 'M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z' },
+		{ text: 'Express JS', icon: 'M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z' },
+		{ text: 'Node JS', icon: 'M21 3c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.323.861 2.433 2.05 2.832.168 4.295-2.021 4.764-4.998 5.391-1.709.36-3.642.775-5.052 2.085v-7.492c1.163-.413 2-1.511 2-2.816 0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.305.837 2.403 2 2.816v12.367c-1.163.414-2 1.512-2 2.817 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.295-.824-2.388-1.973-2.808.27-3.922 2.57-4.408 5.437-5.012 3.038-.64 6.774-1.442 6.579-7.377 1.141-.425 1.957-1.514 1.957-2.803zm-16.8 0c0-.993.807-1.8 1.8-1.8s1.8.807 1.8 1.8-.807 1.8-1.8 1.8-1.8-.807-1.8-1.8zm3.6 18c0 .993-.807 1.8-1.8 1.8s-1.8-.807-1.8-1.8.807-1.8 1.8-1.8 1.8.807 1.8 1.8z' },
+		{ text: 'Redux', icon: 'M23 10.826v2.349c-1.562 0-3 1.312-3 2.857 0 2.181 1.281 5.968-6 5.968v-2.002c4.917 0 3.966-1.6 3.966-3.967 0-2.094 1.211-3.5 2.278-4.031-1.067-.531-2.278-1.438-2.278-3.312 0-2.372.94-4.692-3.966-4.686v-2.002c7.285 0 6 4.506 6 6.688 0 1.544 1.438 2.138 3 2.138zm-19-2.138c0-2.182-1.285-6.688 6-6.688v2.002c-4.906-.007-3.966 2.313-3.966 4.686 0 1.875-1.211 2.781-2.278 3.312 1.067.531 2.278 1.938 2.278 4.031 0 2.367-.951 3.967 3.966 3.967v2.002c-7.281 0-6-3.787-6-5.969 0-1.545-1.438-2.857-3-2.857v-2.349c1.562.001 3-.593 3-2.137z' },
+		{ text: 'HTML5', icon: 'M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z' },
+		{ text: 'CSS3', icon: 'M8.997 13.985c.01 1.104-.88 2.008-1.986 2.015-1.105.009-2.005-.88-2.011-1.984-.01-1.105.879-2.005 1.982-2.016 1.106-.007 2.009.883 2.015 1.985zm-.978-3.986c-1.104.008-2.008-.88-2.015-1.987-.009-1.103.877-2.004 1.984-2.011 1.102-.01 2.008.877 2.012 1.982.012 1.107-.88 2.006-1.981 2.016zm7.981-4.014c.004 1.102-.881 2.008-1.985 2.015-1.106.01-2.008-.879-2.015-1.983-.011-1.106.878-2.006 1.985-2.015 1.101-.006 2.005.881 2.015 1.983zm-12 15.847c4.587.38 2.944-4.492 7.188-4.537l1.838 1.534c.458 5.537-6.315 6.772-9.026 3.003zm14.065-7.115c1.427-2.239 5.846-9.748 5.846-9.748.353-.623-.429-1.273-.975-.813 0 0-6.572 5.714-8.511 7.525-1.532 1.432-1.539 2.086-2.035 4.447l1.68 1.4c2.227-.915 2.868-1.04 3.995-2.811zm-12.622 4.806c-2.084-1.82-3.42-4.479-3.443-7.447-.044-5.51 4.406-10.03 9.92-10.075 3.838-.021 6.479 1.905 6.496 3.447l1.663-1.456c-1.01-2.223-4.182-4.045-8.176-3.992-6.623.055-11.955 5.466-11.903 12.092.023 2.912 1.083 5.57 2.823 7.635.958.492 2.123.329 2.62-.204zm12.797-1.906c1.059 1.97-1.351 3.37-3.545 3.992-.304.912-.803 1.721-1.374 2.311 5.255-.591 9.061-4.304 6.266-7.889-.459.685-.897 1.197-1.347 1.586z' },
+		{ text: 'JavaScript', icon: 'M21.312 12.644c-.972-1.189-3.646-4.212-4.597-5.284l-1.784 1.018 4.657 5.35c.623.692.459 1.704-.376 2.239-.773.497-5.341 3.376-6.386 4.035-.074-.721-.358-1.391-.826-1.948-.469-.557-6.115-7.376-7.523-9.178-.469-.601-.575-1.246-.295-1.817.268-.549.842-.918 1.43-.918.919 0 1.408.655 1.549 1.215.16.641-.035 1.231-.623 1.685l1.329 1.624 7.796-4.446c1.422-1.051 1.822-2.991.93-4.513-.618-1.053-1.759-1.706-2.978-1.706-1.188 0-.793-.016-9.565 4.475-1.234.591-2.05 1.787-2.05 3.202 0 .87.308 1.756.889 2.487 1.427 1.794 7.561 9.185 7.616 9.257.371.493.427 1.119.15 1.673-.277.555-.812.886-1.429.886-.919 0-1.408-.655-1.549-1.216-.156-.629.012-1.208.604-1.654l-1.277-1.545c-.822.665-1.277 1.496-1.377 2.442-.232 2.205 1.525 3.993 3.613 3.993.596 0 1.311-.177 1.841-.51l9.427-5.946c.957-.664 1.492-1.781 1.492-2.897 0-.744-.24-1.454-.688-2.003zm-8.292-10.492c.188-.087.398-.134.609-.134.532 0 .997.281 1.243.752.312.596.226 1.469-.548 1.912l-5.097 2.888c-.051-1.089-.579-2.081-1.455-2.732l5.248-2.686zm3.254 10.055l-4.828 2.823-.645-.781 4.805-2.808.668.766zm-6.96.238l4.75-2.777.668.768-4.773 2.791-.645-.782zm8.49 1.519l-4.881 2.854-.645-.781 4.858-2.84.668.767z' },
+	],
 };
 
-const competitiveSites = {
-  competitiveSites: [
-    {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866"
-      },
-      profileLink: "https://www.hackerrank.com/"
-    },
-  ]
-}
+const projects = [
+	{
+		imagePath: '/assets/img/projects/timer-project-preview.png',
+		previewLink: 'https://devaidar.github.io/timer-app/',
+		repositoryLink: 'https://github.com/DevAidar/timer-app',
+		name: 'Timer',
+		points: [
+			'Expanded simple timer app into multi user service to allow users in creating, editing, and saving time.',
+			'Simplified UI without compromising on functionality.',
+		],
+	},
+	{
+		imagePath: '/assets/img/projects/weather-project-preview.png',
+		previewLink: 'https://devaidar.github.io/weather-app/',
+		repositoryLink: 'https://github.com/DevAidar/weather-app',
+		name: 'Weather Forecast',
+		points: [
+			'Integrated an API to show weather forecast for 5 days on webpage.',
+		],
+	},
+	{
+		imagePath: '/assets/img/projects/hackernews-project-preview.png',
+		previewLink: 'https://devaidar.github.io/hackernews-app/',
+		repositoryLink: 'https://github.com/DevAidar/hackernews-app',
+		name: 'Hacker News',
+		points: [
+			'Integrated an API to show hacker news with comments on webpage.',
+			'Comments stack automatically to show threads.',
+		],
+	},
+	{
+		imagePath: '/assets/img/projects/dog-search-project-preview.png',
+		previewLink: 'https://devaidar.github.io/dog-api/',
+		repositoryLink: 'https://github.com/DevAidar/dog-api',
+		name: 'Dog Search',
+		points: [
+			'Integrated an API to show and search for different breeds of dogs on webpage.',
+			'Interactive carousel of pictures to show random breeds.',
+		],
+	},
+];
 
-const degrees = {
-  degrees : [
-    {
-      title: "Saddleback College",
-      subtitle: "Computer Science and Cyber Security",
-      logo_path: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Saddleback_College_seal.svg/1200px-Saddleback_College_seal.svg.png",
-      alt_name: "Saddleback College",
-      duration: "2019 - Present",
-      descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, etc.",
-        "⚡ Apart from this, I have done courses on Front End Development.",
-        "⚡ Interested in Cyber Security field.",
-      ],
-      website_link: "https://www.saddleback.edu"
-    }
-  ]
-}
-
-const certifications = {
-	certifications: []
-};
-
+/*
 const openSource = {
-  /* Your Open Source Section to View Your Github Pinned Projects */
-  /* To know how to get github key look at readme.md */
+	// Your Open Source Section to View Your Github Pinned Projects
+	// To know how to get github key look at readme.md
 
-  githubConvertedToken: "b0ee45aaa93e9c097ac687ef2cc73c7e07d0ae0f",
-  githubUserName: "DevAidar"
+	githubConvertedToken: 'b0ee45aaa93e9c097ac687ef2cc73c7e07d0ae0f',
+	githubUserName: 'DevAidar',
 };
-
-const bigProjects = {};
-
-const achievementSection = {};
-
-const blogSection = {
-  /* Blogs Section */
-
-  title: "Blogs",
-  subtitle:
-    "With love for individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-  link: "https://ashutoshhathidara.wordpress.com",
-  avatar_image_path: "blogs_image.svg"
-
-  
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅",
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image:
-        "https://scontent.fkhi6-1.fna.fbcdn.net/v/t1.0-9/76714032_1730516240415559_1293494289556307968_o.jpg?_nc_cat=103&_nc_ohc=s5f81rdZd6wAQmqUa52YQBA21MjVOy7e-HN9jI7MspRDC-v5ahEouyInQ&_nc_ht=scontent.fkhi6-1.fna&oh=c29141a9a0de7ff2011a8191f5475a78&oe=5E83127C"
-    }
-  ]
-};
-
-// Podcast Section
-const podcastSection = {
-  title: "Podcast 🎙️",
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ]
-};
-
-const contactInfo = {};
+*/
 
 export {
-	theme,
-	greeting,
+	intro,
 	socialMediaLinks,
-	skills,
-	competitiveSites,
-	degrees,
-	certifications,
-	openSource,
-	bigProjects,
-	achievementSection,
-	blogSection,
-	talkSection,
-	podcastSection,
-	contactInfo
+	aboutMe,
+	projects,
 };
